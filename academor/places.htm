@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Places in India</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&family=Yatra+One&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "poppins", sans-serif;
+          }
+          body {
+            background-color: #343434;
+          }
+          
+          .nav1 {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color:#151515;
+            align-items: center;
+          }
+          .ul1 {
+            display: flex;
+            gap: 30px;
+            font-size: 1.2em;
+            padding-right: 20px;
+          }
+          
+          .li1 {
+            list-style: none;
+            padding: 18px;
+            width: 80px;
+            height:22px;
+            text-align: center;
+            border-radius: 30px;
+            transition: all 3.4s ease;
+            position: relative; /* Ensure z-index works */
+            z-index: 1; /* Ensure the button is above the animated background */
+            overflow: hidden; /* Hide overflow */
+        }
+        
+        .li1::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, #ff9933, #ffffff, #138808,white,white); /* Adjusted gradient */
+            background-size: 200% auto;
+            transition: transform 1.6s ease;
+            z-index: -1; /* Behind the button */
+            transform: translateX(-100%);
+        }
+        
+        .li1:hover::before {
+            transform: translateX(100%);
+            
+        }
+        
+        .li1:hover {
+            color: #fff;
+        }
+          .ul1 .li1 a {
+            text-decoration: none;
+            color: rgb(236, 233, 233);
+          }
+        nav h1{
+                font-size: 30px;
+                text-align: center;
+                background: linear-gradient(to right, #ff9933, #ffffff, #138808);
+                background-clip: text; /* Clip the background to the text */
+                -webkit-background-clip: text; /* For Safari */
+                color: transparent; /* Make the text transparent */
+            
+        }
+        .ram{
+            margin-left: 70%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- nav1 -->
+    <nav class="nav1" onclick="over()">
+        <div>
+            <h1>HISTORICAL PLACES OF INDIA</h1>
+        </div>
+     <ul class="ul1">
+       <li class="li1"><a href="index.htm">Home</a></li>
+       <li class="li1"><a href="places.htm">Places</a></li>
+       <li class="li1"><a href="#contacts">Contacts</a></li>
+       <li class="li1"><a href="about.htm">About</a></li>
+     </ul>
+    </nav>
+    </header>
+    <main>
+        <div class="places-container">
+            <div class="place">
+                <img src="https://tinyurl.com/yu832nwa" alt="Taj Mahal">
+                <div class="content">
+                    <h2>Taj Mahal</h2>
+                    <p><p>The Taj Mahal, an ivory-white marble mausoleum on the south bank of the Yamuna river in Agra, was commissioned in 1632 by Mughal emperor Shah Jahan to house the tomb of his wife Mumtaz Mahal. It is widely recognized as the jewel of Muslim art in India and a universally admired masterpiece of world heritage. The Taj Mahal incorporates and expands on design traditions of Persian and earlier Mughal architecture, including a symmetrical layout, arches, and an extensive use of marble inlay work.</p>
+                </p>
+                </div>
+            </div>
+            <div class="place">
+                <img src="https://tinyurl.com/yc7x466p" alt="Qutub Minar">
+                <div class="content">
+                    <h2>Qutub Minar</h2>
+                    <p>The Qutub Minar, standing at 73 meters, is a UNESCO World Heritage Site located in the Mehrauli area of Delhi. Completed in 1193 by Qutab-ud-din Aibak, it is an excellent example of early Indo-Islamic architecture. The minaret features five distinct storeys, each marked by a projecting balcony, and is adorned with intricate carvings and verses from the Quran. The surrounding Qutb complex includes several other historically significant monuments and structures.</p>
+                </div>
+            </div>
+            <div class="place">
+                <img src="https://tinyurl.com/3hb65cb3" alt="India Gate">
+                <div class="content">
+                    <h2>India Gate</h2>
+                    <p>The India Gate, located astride the Rajpath in New Delhi, is a war memorial commemorating the 70,000 Indian soldiers who lost their lives fighting for the British Army during World War I. Designed by Sir Edwin Lutyens and completed in 1931, the 42-meter tall gate stands as a prominent landmark in the city. The structure is inspired by the Arc de Triomphe in Paris and is surrounded by lush lawns, making it a popular spot for locals and tourists alike.</p>
+                </div>
+            </div>
+            <div class="place">
+                <img src="https://tinyurl.com/52hmuw8f" alt="Hawa Mahal">
+                <div class="content">
+                    <h2>Hawa Mahal</h2>
+                    <p>The Hawa Mahal, or Palace of Winds, is an iconic five-storey palace in Jaipur made from red and pink sandstone. Built in 1799 by Maharaja Sawai Pratap Singh, it features 953 small windows called jharokhas, decorated with intricate latticework. The purpose of the lattice design was to allow royal ladies to observe everyday life and festivals celebrated in the street below without being seen, as they had to follow the strict rules of purdah.</p>
+                </div>
+            </div>
+            <div class="place">
+                <img src="https://tinyurl.com/4u45pdj" alt="Red Fort">
+                <div class="content">
+                    <h2>Red Fort</h2>
+                    <p>The Red Fort in Delhi, also known as Lal Qila, is a historic fortification that served as the main residence of the Mughal Emperors. Constructed in 1638 by Shah Jahan, the fort is a stunning example of Mughal architecture with its massive red sandstone walls. The complex includes various structures such as the Diwan-i-Aam, Diwan-i-Khas, and the Moti Masjid, each reflecting the rich history and cultural heritage of the Mughal era.</p>
+                </div>
+            </div>
+            <div class="place">
+                <img src="https://tinyurl.com/4azuyk2x" alt="Charminar">
+                <div class="content">
+                    <h2>Charminar</h2>
+                    <p>The Charminar, built in 1591 by Muhammad Quli Qutb Shah, is a mosque and monument located in Hyderabad. The structure, with its four grand arches and minarets, stands at the center of the city and is an iconic symbol of Hyderabad. It was constructed to mark the end of a deadly plague and is surrounded by bustling bazaars, including the famous Laad Bazaar. The Charminar's architecture combines elements of Indo-Islamic and Persian styles.</p>
+                </div>
+            </div>
+            <div class="place">
+                <img src="https://tinyurl.com/4sesuun6" alt="Amer Fort">
+                <div class="content">
+                    <h2>Amer Fort</h2>
+                    <p>The Amer Fort, located in Amer, Rajasthan, is a magnificent fort known for its artistic Hindu style elements. Constructed by Raja Man Singh I in 1592, the fort overlooks Maota Lake and features large ramparts, series of gates, and cobbled paths. The fort is built with red sandstone and marble and consists of the Diwan-e-Aam, Diwan-e-Khas, Sheesh Mahal, and Sukh Niwas, each displaying intricate carvings and mirror work.</p>
+                </div>
+            </div>
+            <div class="place">
+                <img src="https://tinyurl.com/246537j5" alt="Konark Sun Temple">
+                <div class="content">
+                    <h2>Konark Sun Temple</h2>
+                    <p>The Konark Sun Temple, located in Odisha, is a 13th-century temple dedicated to the sun god Surya. Built by King Narasimhadeva I, the temple is designed in the shape of a gigantic chariot with elaborately carved stone wheels, pillars, and walls. The temple's intricate carvings depict various themes, including deities, dancers, and scenes of daily life. It stands as a testament to the architectural brilliance and artistic excellence of the era.</p>
+                </div>
+            </div>
+            <div class="place">
+                <img src="https://tinyurl.com/25sejsrj" alt="Victoria Memorial">
+                <div class="content">
+                    <h2>Victoria Memorial</h2>
+                    <p>The Victoria Memorial in Kolkata is a large marble building built between 1906 and 1921 in memory of Queen Victoria. Designed by Sir William Emerson, it is an amalgamation of British and Mughal architectural styles. The memorial houses a museum with an extensive collection of artifacts, paintings, and manuscripts. Surrounded by lush gardens, it is one of the most popular tourist attractions in the city, symbolizing the colonial history of India.</p>
+                </div>
+            </div>
+        </div>
+        <div class="summary">
+            <p>India is home to a wealth of historical places that reflect its rich and diverse cultural heritage. From ancient temples to magnificent forts, each site tells a story of its own and contributes to the tapestry of India's history. These historical landmarks not only attract tourists from all over the world but also offer a glimpse into the architectural prowess, artistic achievements, and historical significance of different eras. Exploring these places provides an opportunity to connect with the past and appreciate the legacy left behind by previous generations.</p>
+        </div>
+    </main>
+    <footer id="contacts">
+        <div>
+            <h2><u>FIND ME ON</u></h2>
+        </div>
+        <div class="card">
+            <a class="social-link1" href="https://www.instagram.com/__r_a_m_t_e_j__?igsh=MTRqdnVtdTkydXB5Nw==">
+              <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" fill="white">
+                </path>
+              </svg>
+            </a>
+            <a class="social-link2" href="https://github.com/ramtej9987">
+              <svg viewBox="0 0 496 512" height="1em" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                </path>
+              </svg> </a>
+              <a class="social-link3" href="https://api.whatsapp.com/send?phone=7702441899">
+              <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                <path fill="white" d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z">
+              </svg>
+            </a>
+            <a class="social-link4" href="https://www.linkedin.com/in/ram-tej-59685a290/">
+              <svg fill="#fff" viewBox="0 0 448 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                </path>
+              </svg> </a>
+          </div>
+    </footer>
+    <div class="ram">
+        <h3>-Crafted with passion and pixels by Ram Tej</h3>
+    </div>
+</body>
+</html>

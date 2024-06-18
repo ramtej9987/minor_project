@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India's lively corners</title>
+ <link
+ rel="stylesheet"
+ href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+ integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+ crossorigin="anonymous"/>
+ <style>
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+  }
+  body {
+    background-color: #343434;
+  }
+  
+  .nav1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color:#151515;
+    align-items: center;
+  }
+  .ul1 {
+    display: flex;
+    gap: 30px;
+    font-size: 1.2em;
+    padding-right: 20px;
+  }
+  
+  .li1 {
+    list-style: none;
+    padding: 20px;
+    width: 80px;
+    text-align: center;
+    border-radius: 30px;
+    transition: all 3.4s ease;
+    position: relative; /* Ensure z-index works */
+    z-index: 1; /* Ensure the button is above the animated background */
+    overflow: hidden; /* Hide overflow */
+}
+
+.li1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #ff9933, #ffffff, #138808,white,white); /* Adjusted gradient */
+    background-size: 200% auto;
+    transition: transform 1.6s ease;
+    z-index: -1; /* Behind the button */
+    transform: translateX(-100%);
+}
+
+.li1:hover::before {
+    transform: translateX(100%);
+    
+}
+
+.li1:hover {
+    color: #fff;
+}
+  .ul1 .li1 a {
+    text-decoration: none;
+    color: rgb(236, 233, 233);
+  }
+nav h1{
+        font-size: 30px;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        text-align: center;
+        background: linear-gradient(to right, #ff9933, #ffffff, #138808);
+        background-clip: text; /* Clip the background to the text */
+        -webkit-background-clip: text; /* For Safari */
+        color: transparent; /* Make the text transparent */
+    
+}
+main {
+    flex: 1;
+    margin-top: 80px; /* Height of the header */
+    display: flex;
+    padding: 20px;
+}
+
+.introduction {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    background-color: #FFF5CF;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 500px; /* Adjust height as needed */
+}
+
+.text {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    width: 550px; /* Ensure image does not exceed container width */
+    height: 350px; /* Ensure image does not exceed container height */
+    border-radius: 8px; /* Optional: Add border radius to image */
+}
+
+.text h1 {
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.text p {
+    color: #000000;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+    .introduction {
+        flex-direction: column;
+        height: auto; /* Adjust height for responsiveness */
+    }
+
+    .text, .image {
+        width: 100%; /* Stack content vertically on smaller screens */
+    }
+}
+
+  </style>
+</head>
+<script>
+ function down() {
+   document.getElementById("ul-down").style.opacity = "100%";
+   document.getElementById("ul-down").style.display = "block";
+ }
+
+ function over() {
+   document.getElementById("ul-down").style.display = "none";
+ }
+
+ 
+</script>
+<body>
+    <header>
+    <!-- nav1 -->
+<nav class="nav1" onclick="over()">
+    <div>
+        <h1>HISTORICAL PLACES OF INDIA</h1>
+    </div>
+ <ul class="ul1">
+   <li class="li1"><a href="index.htm">Home</a></li>
+   <li class="li1"><a href="places.htm">Places</a></li>
+   <li class="li1"><a href="about.htm">About</a></li>
+ </ul>
+</nav>
+</header>
+<br/>
+<main>
+    <div class="introduction">
+        <div class="text">
+            <h1><u>Welcome to Historical Places in India</u></h1>
+            <p>India, a land with a rich cultural heritage and history, is home to numerous historical places that reflect its glorious past. From the majestic forts and palaces to ancient temples and monuments, these places offer a glimpse into the architectural brilliance and cultural diversity of India.</p>
+            <p>Each historical site tells a unique story of the bygone eras, showcasing the artistic achievements and historical significance of different periods. Exploring these places allows one to connect with the past and appreciate the legacy left behind by previous generations.</p>
+            <p>India's historical landmarks not only attract tourists from all over the world but also play a crucial role in preserving the country's heritage. Whether it's the grandeur of the Taj Mahal, the architectural marvel of the Qutub Minar, or the historical importance of the Red Fort, each site is a testament to the country's rich history.</p>
+        </div>
+        <div class="image">
+            <img src="https://tinyurl.com/27yy2cmz" alt="Animated GIF">
+        </div>
+    </div>
+</main>
+</body>
+</html>

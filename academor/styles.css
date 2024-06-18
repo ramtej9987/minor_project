@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+body{
+    background-image:url("https://tinyurl.com/cbst6r4x");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main {
+    flex: 1;
+    margin-top: 80px; /* Height of the header */
+    padding: 20px;
+}
+
+.places-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.place {
+    display: flex;
+    flex-direction: row;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.place h2{
+        font-family: "Yatra One", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;      
+}
+.place p{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.place img {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+}
+
+.content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+
+.content h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content p {
+    color: #666;
+}
+
+/* For even-numbered .place divs, swap the order */
+.place:nth-child(even) {
+    flex-direction: row-reverse;
+}
+@media (max-width: 768px) {
+    .place {
+        flex-direction: column;
+    }
+
+    .place img, .content {
+        width: 100%;
+    }
+
+    .place:nth-child(even) {
+        flex-direction: column; /* Ensures even divs stack correctly on small screens */
+    }
+}
+.summary{
+font-family: "Ubuntu Sans Mono", monospace;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: normal;
+    font-size: 25px;
+    margin: 30px;
+    margin-bottom: 80px;
+}
+/*footer*/
+footer{
+    margin-left: 40%;
+}
+footer h2{
+  margin-left: 11%;
+  color:#bc1888;
+  font-size: 30px;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.card {
+    display: flex;
+    height: 70px;
+    width: 350px;
+  }
+  
+  .card svg {
+    position: absolute;
+    display: flex;
+    width: 60%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+    padding: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .card .social-link1,.card .social-link2,.card .social-link3,.card .social-link4,.card .social-link5 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    color: whitesmoke;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+    border-radius: 50px;
+  }
+  
+  .card svg {
+    transform: scale(1);
+  }
+  
+  .card .social-link1:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    animation: bounce_613 0.4s linear;
+  }
+  
+  .card .social-link2:hover {
+    background-color: #242c34;
+    animation: bounce_613 0.4s linear;
+  }
+  
+  .card .social-link3:hover {
+    background-color: #027a0c;
+    animation: bounce_613 0.4s linear;
+  }
+  
+  .card .social-link4:hover {
+    background-color: #0a66c2;
+    animation: bounce_613 0.4s linear;
+  }
+  
+  
+  @keyframes bounce_613 {
+    40% {
+      transform: scale(1.4);
+    }
+  
+    60% {
+      transform: scale(0.8);
+    }
+  
+    80% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
